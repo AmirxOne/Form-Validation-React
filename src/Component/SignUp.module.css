@@ -1,0 +1,321 @@
+@font-face {
+    font-family: IRANYekanThin;
+    src: url("../font/IRANYekanThin.ttf") format("truetype");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fromCounter {
+    padding: 30px 15px;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    font-family: IRANYekanThin, sans-serif;
+    color: white;
+    margin: 10px 0 20px 0;
+}
+
+.title > p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.explanation {
+    font-size: 0.7rem;
+    height: 20px;
+    margin: 16px 0 0 5px;
+}
+
+.divFrom {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    margin: 20px 0;
+    font-family: IRANYekanThin, sans-serif;
+    color: white;
+}
+
+.divFrom > div {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 10px;
+    position: relative;
+}
+
+.divFrom > div > label {
+    font-size: 0.8rem;
+}
+
+.divFrom > div > input {
+    outline: none;
+    border: 1px solid white;
+    width: 230px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    caret-color: white;
+    padding-left: 20px;
+    color: white;
+    font-family: IRANYekanThin, sans-serif;
+}
+
+.divFrom > div > span {
+    height: 15px;
+    text-align: left;
+    margin-top: 5px;
+    width: fit-content;
+    font-size: 0.71rem;
+    color: red;
+    line-height: 13px;
+    padding: 2px 3px;
+    border-radius: 3px;
+    background-color: rgba(255, 0, 0, 0.175);
+    position: absolute;
+    top: 53px;
+    left: 1px;
+}
+
+.divFrom > div > input::placeholder {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.checkForm {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    margin: 10px 0 40px 0;
+    color: white;
+    font-family: IRANYekanThin, sans-serif;
+    font-size: 0.8rem;
+    padding-left: 5px;
+}
+
+.checkForm > span {
+    height: 15px;
+    text-align: left;
+    margin-top: 5px;
+    width: fit-content;
+    font-size: 0.71rem;
+    color: red;
+    line-height: 11px;
+    padding: 2px 3px;
+    border-radius: 3px;
+    background-color: rgba(255, 0, 0, 0.175);
+    position: absolute;
+    top: 18px;
+    left: 12px;
+}
+
+.checkForm > label {
+    line-height: 21px;
+}
+
+input[type="checkbox"] {
+    margin: 0 7px 0 5px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #1a73e8;
+    appearance: none;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked {
+    width: 18px;
+    height: 18px;
+    background: url("../image/check.png") no-repeat center;
+    border-radius: 50%;
+    border: none;
+}
+
+.boxSign {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: IRANYekanThin, sans-serif;
+}
+
+.boxSign > button {
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 30px;
+    background-color: #1a73e8;
+    transition: all linear 0.4s;
+    color: white;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.boxSign > button:hover {
+    background-color: #004aaa;
+    transition: all linear 0.4s;
+}
+
+.boxSign > p {
+    font-size: 0.8rem;
+}
+
+.boxSign > p > a {
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+.uncompleted {
+    width: 230px;
+    height: 30px;
+    border: 1px solid red !important;
+    color: white;
+}
+
+.divDif:focus,
+.uncompleted:focus {
+    outline: none;
+    line-height: 30px;
+    height: 30px;
+    border: 1px solid #1a73e8;
+    color: white;
+}
+
+@media (max-width: 1400px) {
+    .App {
+        padding: 40px;
+    }
+
+    .divFrom > div > input {
+        width: 200px;
+    }
+
+    .title > p {
+        font-size: 20px;
+    }
+
+    .explanation {
+        margin: 12px 0 0 5px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .App {
+        padding: 10px;
+    }
+
+    .fromCounter {
+        padding: 30px 5px;
+    }
+
+    .divFrom > div > input {
+        width: 170px;
+    }
+
+    .title {
+        justify-content: center;
+    }
+
+    .divFrom > div > label {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 1037px) {
+    .title {
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        margin: 10px 0 10px 0;
+    }
+
+    .title > p > span {
+        display: none;
+    }
+}
+
+@media (max-width: 980px) {
+    .App {
+        padding: 50px;
+    }
+
+    .divFrom > div > input {
+        width: 230px;
+    }
+
+    .title > p {
+        font-size: 24px;
+    }
+
+    .explanation {
+        margin: 16px 0 0 5px;
+    }
+
+    .divFrom > div > label {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 690px) {
+    .App {
+        padding: 40px;
+    }
+
+    .divFrom > div > input {
+        width: 200px;
+    }
+
+    .title > p {
+        font-size: 20px;
+    }
+
+    .explanation {
+        margin: 12px 0 0 5px;
+    }
+}
+
+@media (max-width: 590px) {
+    .App {
+        padding: 10px;
+    }
+
+    .fromCounter {
+        padding: 30px 5px;
+    }
+
+    .divFrom > div > input {
+        width: 170px;
+    }
+
+    .title {
+        justify-content: center;
+    }
+
+    .divFrom > div > label {
+        font-size: 0.7rem;
+    }
+}

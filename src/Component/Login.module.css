@@ -1,0 +1,128 @@
+@font-face {
+    font-family: IRANYekanThin;
+    src: url("../font/IRANYekanThin.ttf") format("truetype");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    color: white;
+    font-family: IRANYekanThin, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fromCounter {
+    padding: 30px 15px;
+    height: 100%;
+    text-align: left;
+}
+
+.title {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 30px;
+}
+
+.divForm {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.divForm div {
+    width: 230px;
+    height: 60px;
+    display: flex;
+    margin: 0 0 20px 11px;
+    flex-flow: column nowrap;
+    position: relative;
+    font-family: IRANYekanThin, sans-serif;
+}
+
+.divForm > div > span {
+    height: 15px;
+    text-align: left;
+    margin-top: 5px;
+    width: fit-content;
+    font-size: 0.71rem;
+    color: red;
+    line-height: 12px;
+    padding: 2px 3px;
+    border-radius: 3px;
+    background-color: rgba(255, 0, 0, 0.175);
+    position: absolute;
+    top: 53px;
+    left: 1px;
+}
+
+.divForm div label {
+    font-size: 0.8rem;
+}
+
+.divForm div input {
+    outline: none;
+    border: 1px solid white;
+    width: 230px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    caret-color: white;
+    padding-left: 20px;
+    color: white;
+}
+
+.divForm div input::placeholder {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.fromCounter > div > button {
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 30px;
+    background-color: #1a73e8;
+    transition: all linear 0.4s;
+    line-height: 32px;
+    margin: 30px 0;
+    color: white;
+}
+
+.fromCounter > div > button:hover {
+    background-color: #004aaa;
+    transition: all linear 0.4s;
+}
+
+.fromCounter > div > P {
+    font-size: 0.8rem;
+    margin-left: 15px;
+}
+
+.fromCounter > div > P > a {
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+.uncompleted {
+    width: 230px;
+    height: 30px;
+    border: 1px solid red !important;
+    color: white;
+}
+
+.divDif:focus,
+.uncompleted:focus {
+    outline: none;
+    line-height: 30px;
+    height: 30px;
+    border: 1px solid #1a73e8;
+    color: white;
+}
