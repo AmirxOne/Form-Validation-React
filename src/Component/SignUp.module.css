@@ -319,3 +319,8 @@ input[type="checkbox"]:checked {
         font-size: 0.7rem;
     }
 }
+@media (max-width: 388px){
+    .divFrom > div > input {
+        width: 150px;
+    }
+}
